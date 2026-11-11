@@ -47,18 +47,18 @@ const projects = [
     number: "02"
   },
   {
-    name: "MUSTER · BrokerCopilot",
-    type: "Venture product demonstration",
-    category: "AI systems",
+    name: "MUSTER · Broker Copilot",
+    type: "Early-stage product development",
+    category: "Product",
     description:
-      "An early-stage real-estate lead-qualification concept explored through market research, prospect outreach, and a demonstrated conversational workflow.",
+      "Exploring how real-estate teams can structure incoming property enquiries, capture qualification requirements, and prepare leads for agent follow-up.",
     details: [
-      "Mapped agency prospects across separate Qatar, Pakistan, and selected GCC research snapshots",
-      "Developed preliminary ICP criteria and an outbound tracking process",
-      "Demonstrated conversational qualification for rent budget and bedroom requirements using n8n",
-      "Prepared a browser demo and a client-facing walkthrough"
+      "Product discovery, market research, and preliminary ICP development",
+      "Designed a property-enquiry qualification workflow",
+      "Demonstrated conversational automation using n8n",
+      "Prepared a browser demonstration and client-facing walkthrough"
     ],
-    stack: ["Product discovery", "Workflow design", "n8n", "Conversational automation"],
+    stack: ["Product development", "Product discovery", "Workflow design", "n8n"],
     href: "https://brokercopilot-ai-dem-fnqn.bolt.host/",
     demo: "https://youtube.com/shorts/lHWRA9EHLfQ?feature=share",
     label: "Open demo",
@@ -158,12 +158,12 @@ const projects = [
 const experience = [
   {
     slug: "muster-broker-copilot",
-    role: "Founder · Product & Engineering",
+    role: "Product Development Engineer",
     org: "MUSTER",
-    period: "Current",
+    period: "2026 – Present",
     description:
-      "Contributing to product direction and technical development at an early-stage venture, with a focus on application workflows and backend-oriented engineering.",
-    points: ["Product and technical planning", "Application and workflow development", "Startup ecosystem participation"]
+      "Contributing to the development of Broker Copilot, an early-stage product exploring how real-estate teams can qualify incoming property enquiries through structured conversational workflows.",
+    points: ["Product discovery and workflow design", "Market research and preliminary ICP development", "Conversational automation and product demonstrations"]
   },
   {
     slug: "nic-data-engineering",
@@ -212,7 +212,7 @@ const awards = [
   { slug: "algoverse-scholarship", title: "AlgoVerse Research Program", note: "45% merit scholarship · EOE.ai × Omdena", link: "https://lablab.build/u/%40Faraz_Mubeen", tag: "Scholarship" }
 ];
 
-const filters = ["All", "Backend", "Reliability", "Data", "AI systems", "Research"];
+const filters = ["All", "Backend", "Reliability", "Data", "Product", "AI systems", "Research"];
 
 function SectionHeading({ eyebrow, title, text }: { eyebrow: string; title: string; text?: string }) {
   return (

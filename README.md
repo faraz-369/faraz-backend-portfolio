@@ -9,7 +9,7 @@ A Next.js portfolio positioning Faraz Mubeen Haider as a **Software Engineer foc
 - Evidence panels for source repositories, public programme/project links and supplied QSTP email screenshots.
 - Clear claim boundaries distinguishing personal contribution, team outcomes, product vision and independently verifiable proof.
 - NIC case study linked to PortfolioPulse as a separate portfolio implementation demonstrating related reporting/backend patterns (not represented as NIC's internal system).
-- Broker Copilot story documenting the product concept and QSTP correspondence without claiming incorporation or a signed incubation agreement.
+- MUSTER experience presented as Product Development Engineer, with a Broker Copilot case study and evidence-backed claim boundaries.
 
 ## Run locally
 
@@ -48,9 +48,9 @@ Before publishing, review each story's dates, role wording, links and claim boun
 The PortfolioPulse architecture SVG is explicitly labelled as a conceptual illustration, not an application screenshot. Replace or supplement it with a genuine redacted product screenshot if available.
 
 
-## BrokerCopilot case-study update
+## Broker Copilot case-study update
 
-The MUSTER / Broker Copilot experience page now includes:
+The MUSTER experience is presented as Product Development Engineer and the Broker Copilot page includes:
 - Multi-market prospect research and preliminary ICP / outbound process.
 - Redacted WhatsApp prospect and product-discussion screenshots.
 - Telegram qualification workflow screenshot (n8n attribution visible).
@@ -66,9 +66,9 @@ Evidence assets are stored under `public/evidence/brokercopilot/`. Contact heade
 
 - Primary identity: Software Engineer | Backend Systems & Distributed Systems.
 - Primary proof: PortfolioPulse and AgentFault Lab.
-- Supporting proof: MUSTER / BrokerCopilot early-stage product discovery and workflow demonstration, NIC data workflows, and 1337 Ventures project-based backend contribution.
+- Supporting proof: MUSTER / Broker Copilot early-stage product development, product discovery and workflow demonstration; NIC data workflows; and 1337 Ventures project-based backend contribution.
 - Applied AI and research projects remain supporting work rather than the primary professional identity.
-- The MUSTER / BrokerCopilot case study separates research artefacts, prospect interest, demonstrated workflow behaviour, and commercial outcomes. It does not claim paying customers, pilots, revenue, production deployment or product-market fit.
+- The MUSTER / Broker Copilot case study separates research artefacts, prospect interest, demonstrated workflow behaviour, and commercial outcomes. It does not claim paying customers, pilots, revenue, production deployment or product-market fit.
 
 ## Before publishing
 
