@@ -1,125 +1,227 @@
 export type Evidence = { title: string; description: string; href?: string; image?: string; label?: string; linkLabel?: string };
 export type Story = {
   slug: string; kind: string; title: string; organisation: string; period: string;
-  headline: string; summary: string; context: string; challenge: string;
+  location?: string; headline: string; summary: string; context: string; challenge: string;
   contribution: string[]; approach: string[]; outcome: string[];
   approachStages?: { title: string; items: string[] }[]; learning?: string[];
-  stack: string[]; evidence: Evidence[]; caveat?: string;
+  stack: string[]; evidence: Evidence[]; caveat?: string; story?: string; bullets?: string[];
 };
 
 export const stories: Story[] = [
   {
-    slug: "muster-broker-copilot", kind: "Product development · Product discovery · Workflow design · Conversational automation", title: "MUSTER — Product Development Engineer", organisation: "MUSTER · Broker Copilot", period: "2026 – Present",
-    headline: "From property enquiries to a structured lead-qualification workflow",
-    summary: "Exploring and demonstrating how real-estate teams can structure incoming property enquiries, capture qualification requirements, and prepare leads for agent follow-up.",
-    context: "The product exploration began with how real-estate agencies handle incoming property enquiries. Before an agent can decide what to do next, they may need to understand whether someone intends to rent or buy, their budget, bedroom requirements, and move-in timing. Broker Copilot explored a structured conversation to gather these details and prepare an enquiry for agent follow-up or a potential property viewing. Initial geographical research covered Qatar, Pakistan, and selected GCC/UAE markets. These were areas of exploration, not proof that agencies in each market adopted the product or independently validated the problem.",
-    challenge: "The work needed to move beyond a generic chatbot concept. It involved understanding intended users, researching prospective agencies, identifying preliminary ICP signals, defining a useful qualification interaction, and making the proposed experience tangible enough to evaluate. The central task was to define a coherent workflow—not simply assemble an AI feature list.",
+    slug: "techloset",
+    kind: "Software development · AI delivery",
+    title: "Full Stack Agentic AI Engineer",
+    organisation: "Techloset",
+    period: "Nov 2026 – Present",
+    location: "Faisalabad, Pakistan",
+    headline: "Translate client business requirements into AI-powered software solutions.",
+    summary: "I joined Techloset, a software development company in Faisalabad, as a Full Stack Agentic AI Engineer. I work from the client's business problem first, then translate it into technical requirements and solutions. Alongside the engineering team, I work on LLM-integrated workflows from solution development through delivery.",
+    context: "The work begins with the client's business challenge and the technical requirements needed to turn it into a software solution.",
+    challenge: "The challenge is translating business needs into a practical AI-enabled delivery workflow while working with engineering teams from solution development through implementation.",
     contribution: [
-      "Developed the Broker Copilot product direction within the MUSTER venture context, focusing on real-estate enquiry handling and lead qualification.",
-      "Researched and organised prospective real-estate agencies across Qatar, Pakistan, and selected GCC/UAE markets.",
-      "Created preliminary ICP and prospect-prioritisation fields, outreach templates, channel tracking, and follow-up stages.",
-      "Explored the product niche, potential roadmap, and competitor landscape through product and prospect discussions.",
-      "Defined a conversational qualification flow around rental budget, bedroom requirements, move-in timing, and rent-versus-buy intent.",
-      "Prepared a browser-based qualification demonstration and a client-facing walkthrough video.",
-      "Demonstrated a Telegram conversational workflow using n8n as the automation layer."
+      "Analyse client challenges and turn business needs into technical requirements.",
+      "Work with engineering teams on LLM-integrated workflows, from solution development through delivery.",
+      "Explore AI-driven workflows and LLM integrations as part of building solutions for clients."
     ],
-    approach: [],
-    approachStages: [
-      { title: "Explore the problem", items: ["Understand the incoming property enquiry.", "Identify what information agents need before following up.", "Explore the intended customer segment and geographical markets."] },
-      { title: "Structure the product", items: ["Develop preliminary ICP signals.", "Organise prospect research and outreach.", "Define the essential qualification questions.", "Think through the downstream agent hand-off."] },
-      { title: "Make the workflow tangible", items: ["Translate the qualification concept into a conversational flow.", "Demonstrate how user inputs can be collected.", "Use n8n in the demonstrated Telegram automation.", "Prepare the browser-based qualification interface."] },
-      { title: "Present and refine the concept", items: ["Prepare the client-facing walkthrough.", "Share the demonstration with prospective contacts.", "Explore feedback and further product discussions.", "Treat prospect interest as an early signal, not proof of product-market fit."] }
+    approach: [
+      "Start from the business problem rather than the technology stack.",
+      "Map the client problem into technical requirements and solution flow.",
+      "Collaborate with engineering teams on LLM-integrated delivery work."
     ],
     outcome: [
-      "Created documented market-research and outbound prospecting processes covering Qatar, Pakistan, and selected GCC/UAE markets.",
-      "Produced structured prospect-research workbooks and outreach-tracking records; workbook snapshots may overlap and are not counted as unique prospects.",
-      "Created a conversational demonstration in which a bot asks for property requirements and responds to user inputs.",
-      "Produced a browser-based qualification demonstration and prepared a short client-facing walkthrough video.",
-      "Received an explicit request from a prospective contact to see the demonstration.",
-      "Participated in a separate discussion about the product niche, roadmap, and competitor context."
+      "Working from client requirements to AI-powered software delivery.",
+      "Supporting LLM-integrated workflows as part of client solution development."
     ],
-    learning: [
-      "Start with the operational problem: the questions agents need answered shape a more useful workflow than a feature-first chatbot concept.",
-      "Translate requirements into a small, demonstrable interaction so people can evaluate what the proposed product would actually do.",
-      "Treat early market and ICP assumptions as hypotheses to test through research and discussion, not as established facts.",
-      "A working demonstration makes an idea tangible, but it does not establish production readiness or real-world impact.",
-      "Let user needs and practical feasibility guide technical exploration, then make the limits of each demonstration clear."
-    ],
-    stack: ["Product development", "Product discovery", "Workflow design", "Conversational automation", "2026–Present"],
-    evidence: [
-      { title: "Working Telegram qualification conversation", description: "Screenshot showing a bot asking for monthly rent budget and bedroom requirements, responding to user inputs, and identifying n8n as the automation layer.", image: "/evidence/brokercopilot/telegram-qualification-flow.jpg", label: "Demonstrated workflow" },
-      { title: "Broker Copilot browser demonstration", description: "Browser screenshot of the qualification interface showing a simulated WhatsApp-style conversation about budget, move-in timing, and rent-or-buy intent.", image: "/evidence/brokercopilot/web-qualification-demo.png", label: "Browser demonstration" },
-      { title: "Live demonstration", description: "Supplied browser-based product demonstration. Verify its current availability and behaviour before sharing; it is not presented as a production application.", href: "https://brokercopilot-ai-dem-fnqn.bolt.host/", label: "Product demonstration", linkLabel: "Open live demonstration" },
-      { title: "Client-facing product walkthrough", description: "Short video walkthrough prepared to explain the Broker Copilot workflow.", href: "https://youtube.com/shorts/lHWRA9EHLfQ?feature=share", label: "Walkthrough video", linkLabel: "Watch walkthrough" },
-      { title: "Prospect requested the demonstration", description: "Redacted conversation documenting a prospective contact requesting to see the demonstration and responding positively to the offer. This shows interest in a demo only.", image: "/evidence/brokercopilot/whatsapp-prospect-demo.jpg", label: "Prospect interest" },
-      { title: "Niche, roadmap, and competitor discussion", description: "Redacted conversation documenting a discussion of the product niche, roadmap, and competitor context.", image: "/evidence/brokercopilot/whatsapp-market-roadmap.jpg", label: "Product discussion" },
-      { title: "Market research workbook snapshots", description: "Snapshots of structured market and prospect research across the explored geographies. Separate versions may overlap and are not summed as unique prospects.", image: "/evidence/brokercopilot/market-research-snapshots.png", label: "Market research" },
-      { title: "Recorded outreach status snapshots", description: "Snapshots of recorded status labels in the prospecting workbooks. These labels do not independently verify message delivery, replies, or conversion.", image: "/evidence/brokercopilot/outreach-status-snapshots.png", label: "Outreach tracking" }
-    ],
-    caveat: "This work is at an early product-exploration and demonstration stage. The evidence does not establish live agency deployment, a completed pilot, paying customers, revenue, measurable business impact, or product-market fit. The Telegram screenshot identifies n8n; no unsupported backend, API, database, security, scale, or proprietary-AI claims are made. Prospect interest is not commercial validation. QSTP correspondence supports community welcome and company-registration guidance only; it does not establish incorporation, an executed incubation agreement, funding, formal accelerator admission, or a completed incubation programme."
+    stack: ["AI workflows", "LLM integrations", "Python", "FastAPI"],
+    evidence: [{ title: "Current role context", description: "Current portfolio role record for Techloset.", label: "Role record" }],
+    story: "I joined Techloset, a software development company in Faisalabad, as a Full Stack Agentic AI Engineer. I work from the client's business problem first, then translate it into technical requirements and solutions. Alongside the engineering team, I work on LLM-integrated workflows from solution development through delivery.",
+    bullets: [
+      "Analyse client challenges and turn business needs into technical requirements.",
+      "Work with engineering teams on LLM-integrated workflows, from solution development through delivery.",
+      "Explore AI-driven workflows and LLM integrations as part of building solutions for clients."
+    ]
   },
   {
-    slug: "nic-data-engineering", kind: "Professional experience · Data engineering", title: "Making portfolio reporting less manual", organisation: "NIC Faisalabad", period: "Jan 2024 – Aug 2024",
-    headline: "Building repeatable data workflows to help an incubator understand the performance of its startup portfolio.",
-    summary: "At NIC Faisalabad, I worked on Python-based data processing and reporting workflows for information associated with more than 30 portfolio companies. The work focused on turning recurring spreadsheet tasks into more structured, repeatable processes.",
-    context: "An incubator needs a consistent view of how its portfolio is progressing. Information such as cohort details, retention, funding and performance indicators can arrive in different formats and require repeated preparation before analysts can use it.",
-    challenge: "The operational challenge was the manual effort involved in consolidating, checking and preparing portfolio information for recurring reporting. Inconsistent inputs also make it harder to trust the resulting numbers.",
-    contribution: ["Contributed as an AI / Data Engineer to data processing and reporting workflows.", "Worked with Python, Pandas, SQLAlchemy and PostgreSQL for ETL and structured data handling.", "Helped prepare recurring KPI reporting related to portfolio and cohort performance.", "Applied data checks to improve consistency before information moved into reporting workflows."],
-    approach: ["Extract and transform incoming data into more consistent structures.", "Use Python and Pandas for repeatable data preparation rather than relying entirely on manual spreadsheet operations.", "Use relational storage and SQLAlchemy/PostgreSQL patterns where structured persistence was needed.", "Treat validation as part of the workflow so data issues can be identified before reporting."],
-    outcome: ["Contributed to workflows supporting analysis across 30+ portfolio companies.", "A reported operational estimate from the work was around 60% less manual analyst effort and approximately 12 hours per week saved on repetitive spreadsheet work. These figures should be treated as user-reported estimates pending independent confirmation."],
-    stack: ["Python", "Pandas", "SQLAlchemy", "PostgreSQL", "ETL", "Data validation"],
-    evidence: [
-      { title: "PortfolioPulse · related implementation proof", description: "An independently built backend project demonstrating multi-tenant reporting concepts, organisation-scoped records, CSV ingestion, validation, review workflows and PostgreSQL-backed persistence. It is a portfolio demonstration of related engineering patterns, not a claim that PortfolioPulse was deployed at NIC.", href: "https://github.com/faraz-369/portfoliopulse", label: "GitHub repository" },
-      { title: "PortfolioPulse workflow overview", description: "A conceptual visual of the ingestion, validation, tenant-scoped persistence and review workflow described by the project. This is an architecture illustration, not a screenshot of the running application.", image: "/evidence/portfoliopulse-workflow.svg", label: "Architecture illustration" },
-      { title: "PortfolioPulse source code", description: "Explore the API, data model, migrations, tests and implementation details.", href: "https://github.com/faraz-369/portfoliopulse", label: "Inspect implementation" }
+    slug: "muster-broker-copilot",
+    kind: "Product development · Product discovery · Workflow design · Conversational automation",
+    title: "Product Engineer",
+    organisation: "MUSTER",
+    period: "Jan 2026 – Oct 2026",
+    location: "Doha, Qatar",
+    headline: "Defined and prototyped an AI-powered lead-qualification workflow for real-estate brokers.",
+    summary: "At MUSTER I worked on an early-stage product for real-estate lead management. I started with the workflow itself: how leads are qualified, followed up, and booked for property viewings. I turned that into prototypes that demonstrated automated lead qualification, then demoed them to prospective users to validate the use case and gather feedback. In parallel I mapped prospects across Qatar, Pakistan, and selected GCC markets and drafted ideal-customer-profile criteria to decide who to talk to first.",
+    context: "Real-estate brokers need a clear lead-qualification workflow before follow-up and viewing coordination can happen.",
+    challenge: "The work needed to move beyond a generic chatbot concept and turn real-estate enquiry handling into a product workflow that could be demoed and tested.",
+    contribution: [
+      "Mapped real-estate workflows (lead qualification, follow-ups, property-viewing coordination) and turned user needs into product functionality.",
+      "Designed and developed prototypes demonstrating automated lead qualification.",
+      "Ran product demos with prospective users to validate use cases and gather feedback.",
+      "Researched and mapped prospects across Qatar, Pakistan, and selected GCC markets, and drafted ideal-customer-profile criteria to prioritise them."
     ],
-    caveat: "PortfolioPulse is a separate portfolio project and is included as implementation evidence for related backend/reporting concepts; it was not represented as the system used by NIC. The 60% and 12-hours-per-week figures are reported estimates and should be backed by a supervisor reference or contemporaneous record before being presented as independently verified metrics."
+    approach: [
+      "Start with how real-estate leads are actually handled.",
+      "Turn business workflow requirements into a reusable product concept.",
+      "Prototype the product and test the use case with prospective users."
+    ],
+    outcome: [
+      "Defined and prototyped an AI-powered lead-qualification workflow for real-estate brokers.",
+      "Validated the use case through product demos and prospect feedback."
+    ],
+    stack: ["Product development", "Product discovery", "Workflow design", "Conversational automation"],
+    evidence: [{ title: "MUSTER workflow context", description: "Product engineering record aligned to the MUSTER requirement set.", label: "Portfolio record" }],
+    story: "At MUSTER I worked on an early-stage product for real-estate lead management. I started with the workflow itself: how leads are qualified, followed up, and booked for property viewings. I turned that into prototypes that demonstrated automated lead qualification, then demoed them to prospective users to validate the use case and gather feedback. In parallel I mapped prospects across Qatar, Pakistan, and selected GCC markets and drafted ideal-customer-profile criteria to decide who to talk to first.",
+    bullets: [
+      "Mapped real-estate workflows (lead qualification, follow-ups, property-viewing coordination) and turned user needs into product functionality.",
+      "Designed and developed prototypes demonstrating automated lead qualification.",
+      "Ran product demos with prospective users to validate use cases and gather feedback.",
+      "Researched and mapped prospects across Qatar, Pakistan, and selected GCC markets, and drafted ideal-customer-profile criteria to prioritise them."
+    ]
   },
   {
-    slug: "1337-ventures-backend", kind: "Project-based experience · Backend development", title: "Building backend capabilities for an AI automation SaaS MVP", organisation: "1337 Ventures", period: "Jun 2025 – Sep 2025",
-    headline: "Contributing FastAPI backend functionality during a six-week accelerator development sprint.",
-    summary: "I contributed to backend development for an early-stage SaaS MVP during a project-based engagement with 1337 Ventures. The work sat within a six-week accelerator sprint and involved translating product requirements into backend functionality.",
-    context: "Early-stage product teams need to validate a useful workflow quickly. That requires a backend capable of accepting inputs, processing documents or requests, and returning structured outputs that the product can use.",
-    challenge: "The engineering challenge was to contribute useful backend functionality within a short product-development cycle, while coordinating with a team that was also exploring the product and its customer needs.",
-    contribution: ["Worked as a project-based Backend Developer, not as a full-time employee or founder of 1337 Ventures.", "Contributed Python and FastAPI backend functionality for an AI automation SaaS MVP.", "Worked on document-ingestion and structured-output workflows within the assigned scope.", "Collaborated with the startup team during product development and customer-discovery activities."],
-    approach: ["Translate the product workflow into API-level responsibilities.", "Use FastAPI to expose backend functionality to the application layer.", "Treat document ingestion and structured output as explicit processing stages.", "Work iteratively with the product team during the accelerator sprint."],
-    outcome: ["Contributed backend components to an MVP developed during a six-week accelerator sprint.", "Gained practical experience working within a time-boxed startup product cycle, where engineering work and customer discovery progressed together."],
-    stack: ["Python", "FastAPI", "REST APIs", "Document processing", "SaaS MVP"],
+    slug: "lablab-engineering",
+    kind: "Collaborative projects · Hackathons",
+    title: "Applied AI Developer",
+    organisation: "lablab.ai",
+    period: "Aug 2024 – Aug 2026",
+    location: "Stockholm, Sweden",
+    headline: "Built and demonstrated AI prototypes under hackathon deadlines, including as part of the winning team at the IBM Granite Generative AI Hackathon.",
+    summary: "On lablab.ai I built AI prototypes in time-boxed hackathon teams. The work centered on retrieval-augmented generation (document retrieval, embeddings, semantic search) and multi-step agent workflows with task decomposition, structured outputs, and tool integration, each delivered as a working demo. I was part of the winning team at the IBM Granite Generative AI Hackathon.",
+    context: "Hackathon teams operate under short delivery windows and need working prototypes to demonstrate value quickly.",
+    challenge: "The challenge was to align AI capability with a working application prototype while staying within the constraints of the project timeline.",
+    contribution: [
+      "Implemented retrieval-augmented generation workflows using document retrieval, embeddings, and semantic search.",
+      "Integrated LLM capabilities into application prototypes built with Python, FastAPI, and REST APIs.",
+      "Built multi-step agent workflows with task decomposition, structured outputs, and tool integration.",
+      "Delivered working demonstrations in time-constrained team projects."
+    ],
+    approach: [
+      "Use retrieval, embeddings, and semantic search to ground the prototype.",
+      "Turn model capability into a working application flow.",
+      "Ship a demonstrable result under the hackathon deadline."
+    ],
+    outcome: [
+      "Built and demonstrated AI prototypes under hackathon deadlines.",
+      "Contributed to the winning team at the IBM Granite Generative AI Hackathon."
+    ],
+    stack: ["Python", "FastAPI", "RAG", "Semantic search", "Agent workflows"],
+    evidence: [{ title: "lablab.ai record", description: "Project and hackathon participation profile.", href: "https://lablab.ai/u/@Faraz_Mubeen", label: "Project profile" }],
+    story: "On lablab.ai I built AI prototypes in time-boxed hackathon teams. The work centered on retrieval-augmented generation (document retrieval, embeddings, semantic search) and multi-step agent workflows with task decomposition, structured outputs, and tool integration, each delivered as a working demo. I was part of the winning team at the IBM Granite Generative AI Hackathon.",
+    bullets: [
+      "Implemented retrieval-augmented generation workflows using document retrieval, embeddings, and semantic search.",
+      "Integrated LLM capabilities into application prototypes built with Python, FastAPI, and REST APIs.",
+      "Built multi-step agent workflows with task decomposition, structured outputs, and tool integration.",
+      "Delivered working demonstrations in time-constrained team projects."
+    ]
+  },
+  {
+    slug: "stanford-code-in-place",
+    kind: "Teaching · Selection",
+    title: "Section Leader",
+    organisation: "Stanford Code in Place",
+    period: "Jan 2026 – May 2026",
+    location: "California, United States",
+    headline: "Led weekly live Python sessions for a beginner cohort.",
+    summary: "As a Code in Place Section Leader I ran weekly live Python sessions for a beginner cohort. I guided learners through exercises, helped them debug and reason through problems, and gave feedback on their assignments.",
+    context: "Introductory learners need practical support and feedback to build confidence while learning core programming concepts.",
+    challenge: "The challenge was helping learners reason through exercises and debugging in a live online setting without overwhelming them.",
+    contribution: [
+      "Guided learners through programming exercises, debugging, and problem-solving.",
+      "Explained programming concepts and gave feedback on assignments."
+    ],
+    approach: [
+      "Break down the problem into smaller, understandable steps.",
+      "Guide learners through debugging and reasoning rather than only giving the answer.",
+      "Give feedback that helps them improve their understanding."
+    ],
+    outcome: [
+      "Ran weekly live Python sessions for a beginner cohort.",
+      "Supported learners through exercises, debugging, and assignment feedback."
+    ],
+    stack: ["Python", "Teaching", "Debugging"],
+    evidence: [{ title: "Section Leader announcement", description: "Public LinkedIn post associated with the Code in Place experience.", href: "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7450596499068960769/", label: "Public post" }],
+    story: "As a Code in Place Section Leader I ran weekly live Python sessions for a beginner cohort. I guided learners through exercises, helped them debug and reason through problems, and gave feedback on their assignments.",
+    bullets: [
+      "Guided learners through programming exercises, debugging, and problem-solving.",
+      "Explained programming concepts and gave feedback on assignments."
+    ]
+  },
+  {
+    slug: "1337-ventures-backend",
+    kind: "Project-based experience · Backend development",
+    title: "Backend Developer",
+    organisation: "1337 Ventures",
+    period: "Jun 2025 – Sep 2025",
+    location: "Kuala Lumpur, Malaysia",
+    headline: "Contributed backend components to an AI automation SaaS MVP during a six-week accelerator sprint.",
+    summary: "During a six-week accelerator development sprint at 1337 Ventures, I contributed to the backend of an AI automation SaaS MVP. My part was assigned backend functionality in Python and FastAPI for the AI automation features, plus application workflows for document ingestion and structured-output generation. I worked with the startup team through product development and iteration. This was a project-based engineering contribution.",
+    context: "A time-boxed accelerator sprint requires rapid backend contributions that support a product workflow without waiting for a fully settled product specification.",
+    challenge: "The challenge was contributing meaningful backend functionality in a short sprint while product needs were still evolving.",
+    contribution: [
+      "Implemented backend functionality in Python and FastAPI for the MVP's AI automation features.",
+      "Contributed to application workflows for document ingestion and structured-output generation.",
+      "Worked with the startup team through product development and iteration.",
+      "Project-based engineering contribution."
+    ],
+    approach: [
+      "Translate product requirements into backend functionality.",
+      "Build data and document workflows required by the MVP.",
+      "Support product iteration through a six-week sprint."
+    ],
+    outcome: [
+      "Backend functionality shipped for the AI automation MVP during the sprint.",
+      "Worked as a project-based contributor through product development and iteration."
+    ],
+    stack: ["Python", "FastAPI", "AI automation", "Document workflows"],
     evidence: [{ title: "Experience record", description: "Professional profile and project records can be linked here when a public reference or redacted work sample is available.", href: "https://www.linkedin.com/in/faraz369", label: "LinkedIn profile" }],
-    caveat: "This was a project-based contribution. No claim is made here about sole ownership of the MVP, production scale, customer adoption or revenue."
+    story: "During a six-week accelerator development sprint at 1337 Ventures, I contributed to the backend of an AI automation SaaS MVP. My part was assigned backend functionality in Python and FastAPI for the AI automation features, plus application workflows for document ingestion and structured-output generation. I worked with the startup team through product development and iteration. This was a project-based engineering contribution.",
+    bullets: [
+      "Implemented backend functionality in Python and FastAPI for the MVP's AI automation features.",
+      "Contributed to application workflows for document ingestion and structured-output generation.",
+      "Worked with the startup team through product development and iteration.",
+      "Project-based engineering contribution."
+    ]
   },
   {
-    slug: "stanford-code-in-place", kind: "Teaching · Selection", title: "Helping beginners learn to think in Python", organisation: "Stanford Code in Place", period: "2025 · 2026",
-    headline: "Selected as a Section Leader for two program years and supported learners through live Python sessions.",
-    summary: "Code in Place is a global introductory programming course. As a Section Leader, I supported beginner learners by facilitating sessions, explaining programming concepts and helping them reason through exercises and debugging problems.",
-    context: "For beginners, learning to program is not only about syntax. It is also about building confidence, decomposing a problem and understanding why a solution works.",
-    challenge: "The challenge in a live learning environment is to make abstract ideas understandable while adapting explanations to learners with different levels of confidence and progress.",
-    contribution: ["Served as a Section Leader for the 2026 program; the user reports a further selection in 2025.", "Facilitated weekly live learning sessions and guided Python exercises.", "Helped learners debug code, break problems into smaller steps and understand programming fundamentals.", "Provided feedback and answered learner questions in a supportive learning environment."],
-    approach: ["Explain concepts with small, concrete examples.", "Encourage learners to reason about a problem before jumping to code.", "Use debugging as a learning process rather than simply providing the corrected answer.", "Adapt explanations to the learner's current understanding."],
-    outcome: ["Contributed to an international beginner-learning programme as a Section Leader.", "The two-year selection history is a meaningful signal of continued engagement; the public evidence link currently points to the 2026-related post."],
-    stack: ["Python", "Teaching", "Debugging", "Problem decomposition", "Communication"],
-    evidence: [{ title: "Section Leader announcement", description: "Public LinkedIn post associated with the 2026 Section Leader experience.", href: "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7450596499068960769/", label: "Public post" }],
-    caveat: "The current public link supports the 2026-related announcement. Add the 2025 selection email or certificate as a separate evidence item before claiming both years are independently documented on this page. This is a programme role, not Stanford faculty employment."
-  },
-  {
-    slug: "lablab-engineering", kind: "Collaborative projects · Hackathons", title: "Prototyping AI-enabled application workflows", organisation: "lablab.ai · Collaborative hackathon projects", period: "Aug 2024 – Sep 2025",
-    headline: "Working with teams to turn AI concepts into demonstrable application prototypes.",
-    summary: "Across collaborative hackathon projects, I contributed to prototypes involving retrieval-augmented generation, embeddings, semantic search and multi-step LLM workflows. The emphasis was on connecting model capabilities to usable application flows.",
-    context: "Hackathon teams work under tight constraints: identify a use case, divide responsibilities, integrate unfamiliar services and produce a demonstrable prototype within a short period.",
-    challenge: "The challenge was to make AI components useful inside a coherent product workflow, rather than presenting a model call in isolation.",
-    contribution: ["Contributed to collaborative AI and software engineering hackathon prototypes.", "Worked on backend-oriented components and integrations for retrieval and LLM workflows.", "Explored document retrieval, semantic search, embeddings and multi-step agent patterns.", "Collaborated with teammates to connect technical components into working demonstrations."],
-    approach: ["Break the prototype into ingestion, retrieval, orchestration and response stages where appropriate.", "Use API and application components to connect model workflows to user-facing experiences.", "Prioritise a demonstrable end-to-end flow within the event constraints."],
-    outcome: ["Built practical exposure to integrating AI capabilities into application prototypes.", "Developed a portfolio of collaborative project experience across RAG, semantic search and agent workflows."],
-    stack: ["Python", "FastAPI", "LangChain", "Pinecone", "Semantic search", "LLM APIs"],
-    evidence: [{ title: "lablab.ai profile", description: "Project and hackathon participation profile.", href: "https://lablab.ai/u/@Faraz_Mubeen", label: "Project profile" }],
-    caveat: "These were collaborative prototypes and hackathon contributions. Specific ownership, event counts, rankings and production use should be stated only when a project page or team record verifies them."
+    slug: "nic-data-engineering",
+    kind: "Professional experience · Data engineering",
+    title: "AI / Data Engineer",
+    organisation: "NIC Faisalabad",
+    period: "Jan 2024 – Aug 2024",
+    headline: "Automated KPI reporting for a portfolio of 30+ startups, associated with about 60% less manual analyst time and about 12 hours a week of repetitive spreadsheet work.",
+    summary: "At NIC Faisalabad, KPI reporting for a portfolio of 30+ startups depended on repetitive, manual spreadsheet work. I replaced it with Python ETL workflows that process portfolio performance data and generate recurring cohort, retention, and funding reports. I added data-quality checks so the outputs stayed consistent and reliable, and used Jupyter and Papermill so each report could be reproduced. The automation was associated with about 60% less manual analyst time and about 12 hours a week of spreadsheet work removed.",
+    context: "Portfolio reporting depended on manual spreadsheet work across a large set of companies and recurring reporting needs.",
+    challenge: "The challenge was turning repeated portfolio reporting into a reliable ETL and reporting workflow without sacrificing data quality.",
+    contribution: [
+      "Built ETL workflows in Python, Pandas, SQLAlchemy, and PostgreSQL to process portfolio performance data.",
+      "Automated recurring cohort, retention, and funding reports.",
+      "Added data-quality checks to keep reporting outputs consistent and reliable.",
+      "Used Jupyter and Papermill to make reports reproducible."
+    ],
+    approach: [
+      "Process portfolio performance data into a consistent ETL flow.",
+      "Automate recurring reporting rather than rely on manual spreadsheet work.",
+      "Use data-quality checks to keep outputs reliable."
+    ],
+    outcome: [
+      "Automated KPI reporting for a portfolio of 30+ startups.",
+      "The workflow was associated with about 60% less manual analyst time and about 12 hours a week of repetitive spreadsheet work."
+    ],
+    stack: ["Python", "Pandas", "SQLAlchemy", "PostgreSQL", "ETL", "Data validation"],
+    evidence: [{ title: "PortfolioPulse · related implementation proof", description: "An independently built backend project demonstrating multi-tenant reporting concepts, organisation-scoped records, CSV ingestion, validation, review workflows and PostgreSQL-backed persistence.", href: "https://github.com/faraz-369/portfoliopulse", label: "GitHub repository" }],
+    story: "At NIC Faisalabad, KPI reporting for a portfolio of 30+ startups depended on repetitive, manual spreadsheet work. I replaced it with Python ETL workflows that process portfolio performance data and generate recurring cohort, retention, and funding reports. I added data-quality checks so the outputs stayed consistent and reliable, and used Jupyter and Papermill so each report could be reproduced. The automation was associated with about 60% less manual analyst time and about 12 hours a week of spreadsheet work removed.",
+    bullets: [
+      "Built ETL workflows in Python, Pandas, SQLAlchemy, and PostgreSQL to process portfolio performance data.",
+      "Automated recurring cohort, retention, and funding reports.",
+      "Added data-quality checks to keep reporting outputs consistent and reliable.",
+      "Used Jupyter and Papermill to make reports reproducible."
+    ]
   }
 ];
 
 export const recognitions: Story[] = [
   { slug: "ibm-granite-hackathon", kind: "Team recognition", title: "IBM Granite Generative AI Hackathon", organisation: "Team PolyEns", period: "2025", headline: "A team win built around an applied generative AI prototype.", summary: "PolyEns was recognised as a winning team in the IBM Granite Generative AI Hackathon. This page records the team achievement and links to the public project entry.", context: "The hackathon challenged teams to build useful applications using generative AI capabilities, with a short cycle from idea to demonstration.", challenge: "The team needed to turn a use case into a demonstrable product workflow and coordinate implementation under hackathon constraints.", contribution: ["Participated as a member of Team PolyEns.", "Contributed to the team's software and AI application work; specific personal ownership should be described against the actual repository contributions."], approach: ["Collaborate on the problem framing and prototype workflow.", "Integrate the required AI capability into a demonstrable application."], outcome: ["Team PolyEns was listed as a winning team in the hackathon."], stack: ["IBM Granite", "Generative AI", "Python"], evidence: [{ title: "PolyEns hackathon project", description: "Public project page for the team submission.", href: "https://lablab.ai/ai-hackathons/generative-ai-hackathon-with-ibm-granite/polyens", label: "Project evidence" }], caveat: "This is a team award. Do not imply an individual award or sole authorship." },
   { slug: "cs50-puzzle-day", kind: "Team achievement", title: "Harvard CS50 Puzzle Day", organisation: "Team Cipher Cracker", period: "2025", headline: "A full-score team result across the puzzle set.", summary: "Team Cipher Cracker completed all nine puzzles in CS50 Puzzle Day 2025, according to the achievement record provided for this portfolio.", context: "Puzzle Day rewards collaborative reasoning, pattern recognition and structured problem solving across a set of challenging puzzles.", challenge: "The team needed to interpret unfamiliar problems, test hypotheses and coordinate its reasoning to reach correct solutions.", contribution: ["Participated as a member of Team Cipher Cracker.", "Contributed to collaborative puzzle-solving and reasoning."], approach: ["Break each puzzle into smaller constraints.", "Compare interpretations and test candidate solutions as a team."], outcome: ["Team result: 9/9 puzzles solved."], stack: ["Analytical reasoning", "Problem solving", "Team collaboration"], evidence: [{ title: "Achievement post", description: "Public post associated with the CS50 Puzzle Day result.", href: "https://lnkd.in/p/dniXjMSN", label: "Public evidence" }], caveat: "This is a team result, not an individual competition ranking." },
-  { slug: "calico-spring-2025", kind: "Team result", title: "CALICO Spring 2025", organisation: "Team Hawkeye", period: "2025", headline: "A 96th-place team result in a competitive programming contest.", summary: "Team Hawkeye placed 96th in CALICO Spring 2025, based on the result shared for this portfolio.", context: "Competitive programming contests require teams to understand problem statements, reason about algorithms and implement solutions under time constraints.", challenge: "The team had to coordinate problem selection, implementation and debugging within the contest window.", contribution: ["Participated as a member of Team Hawkeye.", "Contributed to team problem-solving; add a specific problem or implementation contribution if you have contest records."], approach: ["Analyse constraints before choosing an algorithm.", "Divide problem-solving and implementation tasks across teammates."], outcome: ["Team Hawkeye result: 96th place."], stack: ["Algorithms", "Problem solving", "Teamwork"], evidence: [{ title: "CALICO result post", description: "Public post linked to the competition result.", href: "https://lnkd.in/p/dvSMCMnP", label: "Public evidence" }], caveat: "This is a team placement. Keep it labelled as a team result." },
   { slug: "bicon-billbachao", kind: "Project selection", title: "BillBachao selected for BICON", organisation: "BICON Accelerator", period: "2025", headline: "A final-year project selected to continue through an accelerator pathway.", summary: "BillBachao, the user's final-year project, was selected for the BICON accelerator pathway. The available record describes project selection and continuation into incubation.", context: "An accelerator selection is an external signal that a project has been considered for further development support.", challenge: "The team needed to present a coherent problem, product concept and development direction for review.", contribution: ["Contributed to the BillBachao final-year project.", "Participated in the project work associated with its accelerator selection."], approach: ["Frame the project around a defined user problem.", "Present the product concept and development direction for programme review."], outcome: ["The project was selected for the BICON accelerator pathway, as stated in the supplied achievement record."], stack: ["Product development", "Project collaboration"], evidence: [{ title: "BICON selection reference", description: "Public post associated with the project selection.", href: "https://lnkd.in/p/dHW92p6b", label: "Public evidence" }], caveat: "Selection is not the same as commercial launch, funding or product-market fit. Verify the exact programme stage and dates before adding stronger claims." },
   { slug: "algoverse-scholarship", kind: "Research programme selection", title: "AlgoVerse Research Program", organisation: "EOE.ai × Omdena", period: "2025", headline: "Accepted with a 45% merit scholarship.", summary: "The user reports acceptance into the AlgoVerse Research Program with a 45% merit scholarship.", context: "Research programmes provide a structured environment for participants to deepen technical skills and work through a guided research experience.", challenge: "The programme required an application and selection process before participation.", contribution: ["Applied to and was accepted into the programme.", "Received a reported 45% merit scholarship."], approach: ["Demonstrated interest and relevant background through the application process."], outcome: ["Accepted with a 45% merit scholarship, according to the supplied record."], stack: ["Research development", "Technical learning"], evidence: [{ title: "Programme profile", description: "Public profile reference associated with the user's programme activity.", href: "https://lablab.build/u/%40Faraz_Mubeen", label: "Profile" }], caveat: "Use the official acceptance or scholarship letter as primary evidence when available. Acceptance and scholarship do not by themselves establish programme completion." }
 ];

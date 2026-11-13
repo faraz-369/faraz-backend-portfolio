@@ -1,6 +1,6 @@
-# Faraz Mubeen Haider — Software Engineer Portfolio
+# Faraz Mubeen Haider — Intelligent Systems Engineer Portfolio
 
-A Next.js portfolio positioning Faraz Mubeen Haider as a **Software Engineer focused on Backend Systems & Distributed Systems**. Backend applications and APIs lead; data workflows, reliability engineering and applied AI are supporting areas.
+A Next.js portfolio positioning Faraz Mubeen Haider as an **Intelligent Systems Engineer**. The work centers on building backend, data, and applied-AI systems that turn operational needs into measurable value, with clear evidence and disciplined product thinking.
 
 ## What's included
 
@@ -9,7 +9,7 @@ A Next.js portfolio positioning Faraz Mubeen Haider as a **Software Engineer foc
 - Evidence panels for source repositories, public programme/project links and supplied QSTP email screenshots.
 - Clear claim boundaries distinguishing personal contribution, team outcomes, product vision and independently verifiable proof.
 - NIC case study linked to PortfolioPulse as a separate portfolio implementation demonstrating related reporting/backend patterns (not represented as NIC's internal system).
-- MUSTER experience presented as Product Development Engineer, with a Broker Copilot case study and evidence-backed claim boundaries.
+- MUSTER experience presented as Product Engineer (Jan 2026 – Oct 2026), with a Broker Copilot case study and evidence-backed claim boundaries.
 
 ## Run locally
 
@@ -50,7 +50,7 @@ The PortfolioPulse architecture SVG is explicitly labelled as a conceptual illus
 
 ## Broker Copilot case-study update
 
-The MUSTER experience is presented as Product Development Engineer and the Broker Copilot page includes:
+The MUSTER experience is presented as Product Engineer (Jan 2026 – Oct 2026) and the Broker Copilot page includes:
 - Multi-market prospect research and preliminary ICP / outbound process.
 - Redacted WhatsApp prospect and product-discussion screenshots.
 - Telegram qualification workflow screenshot (n8n attribution visible).
@@ -64,10 +64,10 @@ Evidence assets are stored under `public/evidence/brokercopilot/`. Contact heade
 
 ## Portfolio positioning and content hierarchy
 
-- Primary identity: Software Engineer | Backend Systems & Distributed Systems.
-- Primary proof: PortfolioPulse and AgentFault Lab.
+- Primary identity: Intelligent Systems Engineer.
+- Primary proof: PortfolioPulse, AgentFault Lab, and applied-AI product work that turns technical systems into measurable value.
 - Supporting proof: MUSTER / Broker Copilot early-stage product development, product discovery and workflow demonstration; NIC data workflows; and 1337 Ventures project-based backend contribution.
-- Applied AI and research projects remain supporting work rather than the primary professional identity.
+- Applied AI and research projects are framed as evidence of technical leverage and iterative engineering rather than the sole identity.
 - The MUSTER / Broker Copilot case study separates research artefacts, prospect interest, demonstrated workflow behaviour, and commercial outcomes. It does not claim paying customers, pilots, revenue, production deployment or product-market fit.
 
 ## Before publishing
