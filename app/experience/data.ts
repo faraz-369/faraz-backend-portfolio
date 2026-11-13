@@ -72,38 +72,38 @@ export const stories: Story[] = [
     evidence: [
       {
         title: "WhatsApp prospect discussion",
-        description: "Customer-facing proof of the lead-qualification workflow and early product discussion with a prospect.",
+        description: "This is a real prospect conversation showing the pain point in context: brokers were receiving unstructured property enquiries, and the product had to convert that into a qualification workflow. It reinforces the identity of an engineer who starts from the operational problem, then designs the product and workflow around it.",
         image: "/evidence/brokercopilot/whatsapp-prospect-demo.jpg",
         label: "Proof screenshot"
       },
       {
         title: "Market research snapshots",
-        description: "Outreach and market mapping used to identify target segments and prioritise outreach in Qatar and nearby GCC markets.",
+        description: "These screenshots show the market-mapping and outreach work used to identify the right prospects and segments in Qatar and nearby GCC markets. They demonstrate product discovery in action and show why this work was grounded in buyer needs rather than a generic AI concept.",
         image: "/evidence/brokercopilot/market-research-snapshots.png",
         label: "Proof screenshot"
       },
       {
         title: "Broker Copilot qualification demo",
-        description: "Browser-based proof of the structured property-enquiry and lead-qualification flow.",
+        description: "This is the working browser demo of the lead-qualification flow: the user asks or submits a property enquiry, and the system structures the interaction into a usable qualification path. It shows the identity behind the work clearly — product-minded engineering turning a real workflow into an AI-driven system that can be tested and refined.",
         image: "/evidence/brokercopilot/web-qualification-demo.png",
         href: "https://brokercopilot-ai-dem-fnqn.bolt.host/",
         label: "Live demo"
       },
       {
-        title: "Telegram workflow flow",
-        description: "Qualification workflow screenshot showing the automation path and status handling for incoming leads.",
+        title: "Telegram qualification workflow",
+        description: "This workflow screenshot shows how the automation proceeds from inbound enquiry to structured qualification and status handling. It matters because it proves the engineering work was not just idea generation; it was system design for a real operational process.",
         image: "/evidence/brokercopilot/telegram-qualification-flow.jpg",
         label: "Proof screenshot"
       },
       {
         title: "Outreach status snapshots",
-        description: "Records of ongoing outreach status and opportunity tracking during product validation.",
+        description: "These records document the outreach and qualification work being validated in practice. They reinforce the product-engineering identity by showing an iterative loop of discovery, feedback, and refinement rather than a static prototype built without customer signal.",
         image: "/evidence/brokercopilot/outreach-status-snapshots.png",
         label: "Proof screenshot"
       },
       {
         title: "WhatsApp market roadmap",
-        description: "Supporting screenshot showing market research and the product discussion context used to refine the workflow.",
+        description: "This snapshot captures the market-context and product discussion behind the solution. It reinforces the broader identity of an intelligent-systems engineer who connects business context, user workflow, and technical implementation into one coherent system design.",
         image: "/evidence/brokercopilot/whatsapp-market-roadmap.jpg",
         label: "Proof screenshot"
       }
