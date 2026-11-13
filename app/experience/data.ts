@@ -69,7 +69,45 @@ export const stories: Story[] = [
       "Validated the use case through product demos and prospect feedback."
     ],
     stack: ["Product development", "Product discovery", "Workflow design", "Conversational automation"],
-    evidence: [{ title: "MUSTER workflow context", description: "Product engineering record aligned to the MUSTER requirement set.", label: "Portfolio record" }],
+    evidence: [
+      {
+        title: "WhatsApp prospect discussion",
+        description: "Customer-facing proof of the lead-qualification workflow and early product discussion with a prospect.",
+        image: "/evidence/brokercopilot/whatsapp-prospect-demo.jpg",
+        label: "Proof screenshot"
+      },
+      {
+        title: "Market research snapshots",
+        description: "Outreach and market mapping used to identify target segments and prioritise outreach in Qatar and nearby GCC markets.",
+        image: "/evidence/brokercopilot/market-research-snapshots.png",
+        label: "Proof screenshot"
+      },
+      {
+        title: "Broker Copilot qualification demo",
+        description: "Browser-based proof of the structured property-enquiry and lead-qualification flow.",
+        image: "/evidence/brokercopilot/web-qualification-demo.png",
+        href: "https://brokercopilot-ai-dem-fnqn.bolt.host/",
+        label: "Live demo"
+      },
+      {
+        title: "Telegram workflow flow",
+        description: "Qualification workflow screenshot showing the automation path and status handling for incoming leads.",
+        image: "/evidence/brokercopilot/telegram-qualification-flow.jpg",
+        label: "Proof screenshot"
+      },
+      {
+        title: "Outreach status snapshots",
+        description: "Records of ongoing outreach status and opportunity tracking during product validation.",
+        image: "/evidence/brokercopilot/outreach-status-snapshots.png",
+        label: "Proof screenshot"
+      },
+      {
+        title: "WhatsApp market roadmap",
+        description: "Supporting screenshot showing market research and the product discussion context used to refine the workflow.",
+        image: "/evidence/brokercopilot/whatsapp-market-roadmap.jpg",
+        label: "Proof screenshot"
+      }
+    ],
     story: "At MUSTER I worked on an early-stage product for real-estate lead management. I started with the workflow itself: how leads are qualified, followed up, and booked for property viewings. I turned that into prototypes that demonstrated automated lead qualification, then demoed them to prospective users to validate the use case and gather feedback. In parallel I mapped prospects across Qatar, Pakistan, and selected GCC markets and drafted ideal-customer-profile criteria to decide who to talk to first.",
     bullets: [
       "Mapped real-estate workflows (lead qualification, follow-ups, property-viewing coordination) and turned user needs into product functionality.",
