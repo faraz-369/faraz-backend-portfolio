@@ -402,7 +402,7 @@ export default function Portfolio() {
         <div className="contact-grid" />
         <div className="contact-inner">
           <span className="eyebrow">09 / CONTACT</span>
-          <h2>Have a backend problem<br /><span>worth solving?</span></h2>
+          <h2>Building AI-enabled software? Tell me the problem your team is working on.</h2>
           <p>I’m interested in software engineering opportunities and collaborations involving backend applications, reliable APIs, and data-driven products.</p>
           <div className="contact-actions">
             <a className="button button-primary" href="mailto:faraz.outreach8@gmail.com">Start a conversation <Mail size={16} /></a>
