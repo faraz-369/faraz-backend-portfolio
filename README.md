@@ -52,12 +52,11 @@ The PortfolioPulse architecture SVG is explicitly labelled as a conceptual illus
 
 The MUSTER experience is presented as Product Engineer (Jan 2026 – Oct 2026) and the Broker Copilot page includes:
 - Multi-market prospect research and preliminary ICP / outbound process.
-- Redacted WhatsApp prospect and product-discussion screenshots.
-- Telegram qualification workflow screenshot (n8n attribution visible).
-- Browser-based product demo screenshot.
-- Supplied web demo and client walkthrough video links.
-- Market-research and recorded-status snapshot visuals.
-- Explicit evidence boundaries separating demonstration, prospect interest and commercial validation.
+- Redacted WhatsApp screenshots covering a prospect's demo request and product/market discussion.
+- Telegram qualification conversation screenshot showing the n8n automation layer.
+- Browser qualification interface screenshot, live browser demonstration, and client-facing walkthrough video.
+- Market-research workbook and recorded outreach-status snapshots.
+- Descriptions explaining what each artefact evidences, alongside boundaries separating prototype demonstrations and prospect interest from deployment or commercial validation.
 
 Evidence assets are stored under `public/evidence/brokercopilot/`. Contact headers are redacted in public-facing WhatsApp copies. Review the live demo and video links before publishing; no claims of production deployment, paying customers, pilots, revenue or product-market fit are made.
 

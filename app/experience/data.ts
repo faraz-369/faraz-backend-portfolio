@@ -50,69 +50,83 @@ export const stories: Story[] = [
     period: "Jan 2026 – Oct 2026",
     location: "Doha, Qatar",
     headline: "Defined and prototyped an AI-powered lead-qualification workflow for real-estate brokers.",
-    summary: "At MUSTER I worked on an early-stage product for real-estate lead management. I started with the workflow itself: how leads are qualified, followed up, and booked for property viewings. I turned that into prototypes that demonstrated automated lead qualification, then demoed them to prospective users to validate the use case and gather feedback. In parallel I mapped prospects across Qatar, Pakistan, and selected GCC markets and drafted ideal-customer-profile criteria to decide who to talk to first.",
+    summary: "At MUSTER I worked on an early-stage product concept for real-estate lead management. I mapped how brokers qualify enquiries, translated the workflow into browser and Telegram demonstrations, and prepared a short client-facing walkthrough. Alongside the prototype work, I researched prospects across Qatar, Pakistan, and selected GCC markets and drafted initial ideal-customer-profile criteria.",
     context: "Real-estate brokers need a clear lead-qualification workflow before follow-up and viewing coordination can happen.",
     challenge: "The work needed to move beyond a generic chatbot concept and turn real-estate enquiry handling into a product workflow that could be demoed and tested.",
     contribution: [
       "Mapped real-estate workflows (lead qualification, follow-ups, property-viewing coordination) and turned user needs into product functionality.",
-      "Designed and developed prototypes demonstrating automated lead qualification.",
-      "Ran product demos with prospective users to validate use cases and gather feedback.",
+      "Designed conversational and browser-based prototypes for qualifying property enquiries, including questions about budget, bedroom requirements, move-in timing, and rent-versus-buy intent.",
+      "Demonstrated the concept through a Telegram workflow using n8n and prepared a browser-based product walkthrough for prospective contacts.",
       "Researched and mapped prospects across Qatar, Pakistan, and selected GCC markets, and drafted ideal-customer-profile criteria to prioritise them."
     ],
     approach: [
-      "Start with how real-estate leads are actually handled.",
-      "Turn business workflow requirements into a reusable product concept.",
-      "Prototype the product and test the use case with prospective users."
+      "Start with the broker workflow and identify the information needed to qualify an enquiry.",
+      "Translate those requirements into a conversational flow and browser-based demonstration.",
+      "Use the Telegram automation, walkthrough, prospect conversations, and market research to present and refine the early product concept."
     ],
     outcome: [
       "Defined and prototyped an AI-powered lead-qualification workflow for real-estate brokers.",
-      "Validated the use case through product demos and prospect feedback."
+      "Prepared browser and Telegram demonstrations, a client-facing walkthrough, and market-research materials to support product discussions with prospective contacts."
     ],
     stack: ["Product development", "Product discovery", "Workflow design", "Conversational automation"],
     evidence: [
       {
-        title: "WhatsApp prospect discussion",
-        description: "This is a real prospect conversation showing the pain point in context: brokers were receiving unstructured property enquiries, and the product had to convert that into a qualification workflow. It reinforces the identity of an engineer who starts from the operational problem, then designs the product and workflow around it.",
+        title: "Prospect conversation and demo request",
+        description: "A redacted WhatsApp exchange recording a prospective contact's request to see the demonstration. It provides context for the product discussion and shows how I connected a prospect's interest to a tangible workflow demo; it is evidence of interest in a demonstration, not a customer, pilot, or validation of commercial demand.",
         image: "/evidence/brokercopilot/whatsapp-prospect-demo.jpg",
-        label: "Proof screenshot"
+        label: "Prospect interest"
       },
       {
-        title: "Market research snapshots",
-        description: "These screenshots show the market-mapping and outreach work used to identify the right prospects and segments in Qatar and nearby GCC markets. They demonstrate product discovery in action and show why this work was grounded in buyer needs rather than a generic AI concept.",
+        title: "Market research workbook snapshots",
+        description: "Snapshots of the structured market and prospect research used to explore target segments across the selected geographies. They show the discovery work behind deciding whom to approach and what workflow to investigate, rather than treating AI as a solution in search of a problem. Overlapping workbook versions are not counted as unique prospects.",
         image: "/evidence/brokercopilot/market-research-snapshots.png",
-        label: "Proof screenshot"
+        label: "Product discovery"
       },
       {
-        title: "Broker Copilot qualification demo",
-        description: "This is the working browser demo of the lead-qualification flow: the user asks or submits a property enquiry, and the system structures the interaction into a usable qualification path. It shows the identity behind the work clearly — product-minded engineering turning a real workflow into an AI-driven system that can be tested and refined.",
+        title: "Broker Copilot browser demonstration",
+        description: "A screenshot of the browser-based qualification interface, showing a simulated property conversation about budget, move-in timing, and rent-or-buy intent. It makes the product concept inspectable and shows how I translated workflow requirements into a testable software experience; the screenshot represents a demonstration, not a production deployment.",
         image: "/evidence/brokercopilot/web-qualification-demo.png",
-        href: "https://brokercopilot-ai-dem-fnqn.bolt.host/",
-        label: "Live demo"
+        label: "Browser demonstration"
       },
       {
-        title: "Telegram qualification workflow",
-        description: "This workflow screenshot shows how the automation proceeds from inbound enquiry to structured qualification and status handling. It matters because it proves the engineering work was not just idea generation; it was system design for a real operational process.",
+        title: "Telegram qualification conversation",
+        description: "A screenshot of the demonstrated bot asking for a rental budget and bedroom requirements, responding to the prospect's inputs, and showing n8n as the automation layer. It is a concrete trace of how the qualification concept was expressed as a conversational workflow, beyond a written product idea.",
         image: "/evidence/brokercopilot/telegram-qualification-flow.jpg",
-        label: "Proof screenshot"
+        label: "Demonstrated workflow"
       },
       {
-        title: "Outreach status snapshots",
-        description: "These records document the outreach and qualification work being validated in practice. They reinforce the product-engineering identity by showing an iterative loop of discovery, feedback, and refinement rather than a static prototype built without customer signal.",
+        title: "Recorded outreach status snapshots",
+        description: "Snapshots of status labels recorded in the prospecting workbooks. They show how I kept track of the discovery and outreach process; the labels do not independently verify message delivery, replies, conversions, or customer adoption.",
         image: "/evidence/brokercopilot/outreach-status-snapshots.png",
-        label: "Proof screenshot"
+        label: "Outreach tracking"
       },
       {
-        title: "WhatsApp market roadmap",
-        description: "This snapshot captures the market-context and product discussion behind the solution. It reinforces the broader identity of an intelligent-systems engineer who connects business context, user workflow, and technical implementation into one coherent system design.",
+        title: "Niche, roadmap, and competitor discussion",
+        description: "A redacted conversation documenting discussion of the product niche, roadmap, and competitor context. It shows the product reasoning around the prototype: connecting the workflow to a market context and exploring what should be built next, without treating discussion as proof of a commercial commitment.",
         image: "/evidence/brokercopilot/whatsapp-market-roadmap.jpg",
-        label: "Proof screenshot"
+        label: "Product discussion"
+      },
+      {
+        title: "Live browser demonstration",
+        description: "Open the supplied browser-based Broker Copilot demonstration to inspect the qualification experience directly. This makes the prototype tangible alongside the screenshots; availability and behavior may change, and it is not presented as a production application.",
+        href: "https://brokercopilot-ai-dem-fnqn.bolt.host/",
+        label: "Product demonstration",
+        linkLabel: "Open live demonstration"
+      },
+      {
+        title: "Client-facing product walkthrough",
+        description: "A short walkthrough prepared to explain the Broker Copilot workflow to prospective contacts. It shows how I communicated the product concept as a coherent user journey, complementing the browser and Telegram demonstrations. A walkthrough demonstrates the concept; it does not establish deployment or adoption.",
+        href: "https://youtube.com/shorts/lHWRA9EHLfQ?feature=share",
+        label: "Walkthrough video",
+        linkLabel: "Watch walkthrough"
       }
     ],
-    story: "At MUSTER I worked on an early-stage product for real-estate lead management. I started with the workflow itself: how leads are qualified, followed up, and booked for property viewings. I turned that into prototypes that demonstrated automated lead qualification, then demoed them to prospective users to validate the use case and gather feedback. In parallel I mapped prospects across Qatar, Pakistan, and selected GCC markets and drafted ideal-customer-profile criteria to decide who to talk to first.",
+    caveat: "The screenshots, live demo, and walkthrough document product discovery and prototype demonstrations. Prospect conversations and workbook status labels are not evidence of paying customers, a completed pilot, production deployment, conversion, revenue, measurable business impact, or product-market fit.",
+    story: "At MUSTER, I worked on an early-stage product concept for real-estate lead management. I started with the broker workflow: what information is needed to qualify an enquiry, how follow-up should work, and how a viewing might be arranged. I translated that into a conversational flow covering rental budget, bedroom requirements, move-in timing, and rent-versus-buy intent. I prepared a browser-based interface and a Telegram demonstration using n8n, then created a short walkthrough to make the concept easy to inspect and discuss. In parallel, I mapped prospects across Qatar, Pakistan, and selected GCC markets, drafted initial ideal-customer-profile criteria, and tracked outreach. The evidence below shows those actual discovery materials and demonstrations: the workflow and interface I prepared, how I presented the concept, and the market and prospect context around it. This was early product exploration and prototyping, not a claim of production deployment or commercial traction.",
     bullets: [
       "Mapped real-estate workflows (lead qualification, follow-ups, property-viewing coordination) and turned user needs into product functionality.",
-      "Designed and developed prototypes demonstrating automated lead qualification.",
-      "Ran product demos with prospective users to validate use cases and gather feedback.",
+      "Designed conversational and browser-based prototypes for automated lead qualification.",
+      "Prepared a Telegram workflow and client-facing walkthrough to demonstrate the product concept.",
       "Researched and mapped prospects across Qatar, Pakistan, and selected GCC markets, and drafted ideal-customer-profile criteria to prioritise them."
     ]
   },

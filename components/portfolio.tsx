@@ -114,11 +114,11 @@ const experience = [
     location: "Doha, Qatar",
     description: "Defined and prototyped an AI-powered lead-qualification workflow for real-estate brokers.",
     headline: "Defined and prototyped an AI-powered lead-qualification workflow for real-estate brokers.",
-    story: "At MUSTER I worked on an early-stage product for real-estate lead management. I started with the workflow itself: how leads are qualified, followed up, and booked for property viewings. I turned that into prototypes that demonstrated automated lead qualification, then demoed them to prospective users to validate the use case and gather feedback. In parallel I mapped prospects across Qatar, Pakistan, and selected GCC markets and drafted ideal-customer-profile criteria to decide who to talk to first.",
+    story: "At MUSTER, I worked on an early-stage product concept for real-estate lead management. I mapped how brokers qualify enquiries, translated the workflow into browser and Telegram demonstrations, and prepared a short client-facing walkthrough. Alongside the prototype work, I researched prospects across Qatar, Pakistan, and selected GCC markets and drafted initial ideal-customer-profile criteria.",
     points: [
       "Mapped real-estate workflows (lead qualification, follow-ups, property-viewing coordination) and turned user needs into product functionality.",
-      "Designed and developed prototypes demonstrating automated lead qualification.",
-      "Ran product demos with prospective users to validate use cases and gather feedback.",
+      "Designed conversational and browser-based prototypes for automated lead qualification.",
+      "Prepared a Telegram workflow and client-facing walkthrough to demonstrate the product concept.",
       "Researched and mapped prospects across Qatar, Pakistan, and selected GCC markets, and drafted ideal-customer-profile criteria to prioritise them."
     ]
   },
