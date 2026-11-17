@@ -9,50 +9,49 @@ import {
 
 const featuredProjects = [
   {
-    name: "PortfolioPulse",
-    type: "Backend application",
-    description: "A multi-tenant portfolio reporting application built around organisation-scoped data, controlled submissions, and auditable workflows.",
-    details: [
-      "Problem: Multi-organization portfolio reporting needed trustworthy data and clear access boundaries.",
-      "System: A multi-tenant app with JWT authentication, role-based access, validated CSV ingestion, submission review history, and PostgreSQL constraints.",
-      "Measure: Behavior verified by automated tests and database constraints.",
-      "Result: The application is designed to support trustworthy portfolio reporting.",
-    ],
-    stack: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "Pytest"],
-    href: "https://github.com/faraz-369/portfoliopulse",
-    label: "View repository",
-    number: "01"
-  },
-  {
     name: "AgentFault Lab",
-    type: "Reliability research prototype",
+    type: "AI reliability research prototype",
     description: "A controlled environment for studying failure and recovery behaviour in multi-step agent workflows through fault injection, structured traces, and invariant checks.",
     details: [
       "Problem: Multi-step agent workflows fail in ways that are hard to observe and compare.",
-      "System: A fault-injection harness that compares no-recovery, retry, and state-aware recovery policies, with structured traces and invariant checks.",
+      "System: A fault-injection harness comparing no-recovery, retry, and state-aware recovery policies.",
       "Measure: Task completion and invariant violations per policy.",
-      "Result: Policy comparisons are evaluated through structured traces and invariant checks.",
+      "Result: Recovery behaviour can be compared through structured traces and invariant checks.",
       "Reusable: Built as a harness that can run other agent workflows."
     ],
     stack: ["Python", "FastAPI", "SQLite", "Pytest", "Docker"],
     href: "https://github.com/faraz-369/agentfault-lab-Web",
     demo: "https://agentfault-lab-web.vercel.app/",
     label: "Explore project",
-    number: "02"
+    number: "01"
   },
   {
     name: "RAG Agent Failure Catalog",
-    type: "Reproducible engineering catalog",
+    type: "AI failure-mode catalog",
     description: "A catalogue of failure patterns in retrieval-augmented generation and agent workflows, with minimal reproductions and mitigation ideas.",
     details: [
       "Problem: The same RAG and agent failures get rediscovered on every project.",
       "System: Documented failure patterns, each with a minimal reproduction and a mitigation idea.",
       "Measure: An indexed set of documented patterns and reproductions.",
-      "Result: The catalog captures repeatable failure patterns for reuse.",
-      "Reusable: A catalog to check against before building a new RAG or agent workflow."
+      "Result: Repeatable failure patterns are captured for reuse."
     ],
     stack: ["Python", "RAG", "FAISS", "Testing"],
     href: "https://github.com/faraz-369/rag-agent-failure-catalog",
+    label: "View repository",
+    number: "02"
+  },
+  {
+    name: "PortfolioPulse",
+    type: "Access-controlled backend application",
+    description: "A multi-tenant portfolio reporting application built around organisation-scoped data, controlled submissions, and auditable workflows.",
+    details: [
+      "Problem: Multi-organization portfolio reporting needed trustworthy data and clear access boundaries.",
+      "System: A multi-tenant app with JWT authentication, role-based access, validated CSV ingestion, submission review history, and PostgreSQL constraints.",
+      "Measure: Behaviour verified by automated tests and database constraints.",
+      "Result: Designed to support trustworthy portfolio reporting."
+    ],
+    stack: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "Pytest"],
+    href: "https://github.com/faraz-369/portfoliopulse",
     label: "View repository",
     number: "03"
   },
@@ -72,13 +71,12 @@ const featuredProjects = [
 ];
 
 const howIWork = [
-  { title: "Find problems worth solving.", evidence: "Manual analysis across 30+ portfolio companies was where the time went, so I automated it." },
-  { title: "Design the whole system.", evidence: "PortfolioPulse covers authentication, role-based access, validated CSV ingestion, review history, and database constraints, designed together rather than bolted on." },
-  { title: "Use AI as engineering leverage.", evidence: "I built document-ingestion and structured-output workflows for a SaaS MVP in a six-week sprint." },
-  { title: "Build reusable capabilities.", evidence: "AgentFault Lab and the RAG Agent Failure Catalog turn one-off debugging into a harness and a catalog I can reuse." },
-  { title: "Make quality measurable.", evidence: "AgentFault Lab scores recovery policies against explicit invariant checks; PortfolioPulse enforces behavior with database constraints and automated tests." },
-  { title: "Optimize for cost and outcomes.", evidence: "Associated with about 60% less manual analyst time and about 12 hours a week of repetitive spreadsheet work at NIC Faisalabad." },
-  { title: "Improve from real feedback.", evidence: "Broker Copilot's workflow is shaped by product discovery and demos." }
+  { title: "Look for failure modes.", evidence: "AgentFault Lab injects faults into multi-step agent workflows to make failures observable and comparable." },
+  { title: "Test recovery, not just success.", evidence: "AgentFault Lab compares recovery policies using task completion, structured traces, and invariant violations." },
+  { title: "Make risk review repeatable.", evidence: "The RAG Agent Failure Catalog pairs documented failure patterns with minimal reproductions and mitigation ideas." },
+  { title: "Build controls into the system.", evidence: "PortfolioPulse combines role-based access, organisation-scoped data, validated ingestion, review history, and database constraints." },
+  { title: "Measure reliability and outcomes.", evidence: "I use automated tests and explicit invariants, alongside outcome measures such as reporting time saved." },
+  { title: "Keep claims evidence-led.", evidence: "My case studies distinguish working prototypes and engineering controls from formal security audits or production safety certification." }
 ];
 
 const experiments = [
@@ -238,10 +236,10 @@ export default function Portfolio() {
         <div className="hero-glow hero-glow-two" />
         <div className="hero-inner">
           <div className="hero-copy">
-            <div className="availability"><span className="pulse" /> Software Engineer · Intelligent Systems</div>
+            <div className="availability"><span className="pulse" /> AI Risk &amp; Security Specialist</div>
             <h1>I engineer intelligent systems that continuously create measurable value.</h1>
             <p className="hero-subtitle">
-              Backend, data, and applied-AI systems — from defining the problem to the metrics that prove they work.
+              I work on making AI systems secure, reliable, and resilient as their capabilities increase — with a focus on risk assessment, failure modes, and dependable agent workflows.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#work">See the work <ArrowUpRight size={17} /></a>
@@ -285,17 +283,17 @@ export default function Portfolio() {
       <section className="section about-section" id="about">
         <div className="about-layout">
           <div>
-            <SectionHeading eyebrow="01 / ABOUT" title="Engineering with clarity, not complexity." />
+            <SectionHeading eyebrow="01 / ABOUT" title="Making increasingly capable AI systems safer and more dependable." />
           </div>
           <div className="about-content">
-            <p className="about-lead">I start with the problem and the number that should move. Then I design the whole system around it, covering data, failure paths, tests, and cost, and build with AI as leverage rather than a shortcut. I ship, measure, and improve from real use. My work spans backend services, data pipelines, and applied-AI systems.</p>
+            <p className="about-lead">My professional focus is AI risk and security: understanding how AI systems fail and helping make them secure, reliable, and resilient. My work so far includes agent failure and recovery experiments, a catalog of RAG and agent failure modes, and backend controls such as scoped access, validated data flows, and auditable workflows. These projects are evidence of relevant engineering foundations—not claims of formal security audits, penetration testing, or AI safety certification.</p>
             <a className="text-link" href="https://github.com/faraz-369" target="_blank" rel="noreferrer">Explore my GitHub <ArrowUpRight size={15} /></a>
           </div>
         </div>
       </section>
 
       <section className="section how-section" id="how-i-work">
-        <SectionHeading eyebrow="02 / HOW I WORK" title="How I work" />
+        <SectionHeading eyebrow="02 / HOW I WORK" title="Risk-aware engineering, grounded in evidence." />
         <div className="how-grid">
           {howIWork.map((item) => (
             <article className="how-card" key={item.title}>
@@ -307,7 +305,7 @@ export default function Portfolio() {
       </section>
 
       <section className="section projects-section" id="work">
-        <SectionHeading eyebrow="03 / FEATURED WORK" title="Featured work" text="A few case studies that show how I work from problem to measurable outcome." />
+        <SectionHeading eyebrow="03 / FEATURED WORK" title="AI risk, reliability, and security foundations" text="Projects that show how I investigate failure modes, test recovery behaviour, and build dependable system controls." />
         <div className="project-grid">
           {featuredProjects.map((p) => (
             <article className="project-card featured" key={p.name}>
@@ -331,7 +329,7 @@ export default function Portfolio() {
       </section>
 
       <section className="section experience-section" id="experience">
-        <SectionHeading eyebrow="04 / EXPERIENCE" title="Where I've contributed." text="Product development, data workflows, and technical education." />
+        <SectionHeading eyebrow="04 / EXPERIENCE" title="Where I've contributed." text="Applied-AI delivery, product development, backend systems, data workflows, and technical education." />
         <div className="timeline">
           {experience.map((e, i) => (
             <article className="timeline-item" key={e.slug}>
@@ -352,7 +350,7 @@ export default function Portfolio() {
       </section>
 
       <section className="section experiments-section">
-        <SectionHeading eyebrow="05 / EXPERIMENTS" title="Experiments and prototypes" text="One-line snapshots of project work I built to test ideas and learn quickly." />
+        <SectionHeading eyebrow="05 / EXPERIMENTS" title="Experiments and prototypes" text="Related AI, data-quality, and automation projects—presented as experiments, not security credentials." />
         <ul className="experiments-list">
           {experiments.map((experiment) => (
             <li key={experiment.name}>
@@ -384,6 +382,7 @@ export default function Portfolio() {
             <div className="toolkit-row"><span>LANGUAGES</span><div><b>Python</b><b>SQL</b><b>TypeScript</b></div></div>
             <div className="toolkit-row"><span>BACKEND</span><div><b>FastAPI</b><b>REST APIs</b><b>SQLAlchemy</b><b>Alembic</b></div></div>
             <div className="toolkit-row"><span>DATA</span><div><b>PostgreSQL</b><b>SQLite</b><b>Pandas</b></div></div>
+            <div className="toolkit-row"><span>RISK & RELIABILITY</span><div><b>Failure-mode analysis</b><b>Fault injection</b><b>Invariant checks</b><b>Data validation</b></div></div>
             <div className="toolkit-row"><span>QUALITY & DELIVERY</span><div><b>Pytest</b><b>Docker</b><b>Git</b><b>GitHub Actions</b></div></div>
             <div className="toolkit-row"><span>APPLIED AI</span><div><b>FAISS</b><b>Sentence Transformers</b><b>LangChain</b><b>Gradio</b></div></div>
           </div>
@@ -402,8 +401,8 @@ export default function Portfolio() {
         <div className="contact-grid" />
         <div className="contact-inner">
           <span className="eyebrow">09 / CONTACT</span>
-          <h2>Building AI-enabled software? Tell me the problem your team is working on.</h2>
-          <p>I’m interested in software engineering opportunities and collaborations involving backend applications, reliable APIs, and data-driven products.</p>
+          <h2>Building or evaluating AI systems? Let’s make them more secure and dependable.</h2>
+          <p>I’m interested in AI risk and security opportunities involving AI system evaluation, agent reliability, failure analysis, and responsible deployment.</p>
           <div className="contact-actions">
             <a className="button button-primary" href="mailto:faraz.outreach8@gmail.com">Start a conversation <Mail size={16} /></a>
             <a className="button button-ghost" href="https://www.linkedin.com/in/faraz369" target="_blank" rel="noreferrer">Connect on LinkedIn <ArrowUpRight size={16} /></a>
@@ -414,7 +413,7 @@ export default function Portfolio() {
 
       <footer className="footer">
         <a className="brand" href="#home"><span className="brand-mark">FM</span><span>FARAZ<span className="brand-dot">.</span></span></a>
-        <span>Designed around engineering evidence. © {new Date().getFullYear()} Faraz Mubeen Haider.</span>
+        <span>AI risk &amp; security · Evidence-led engineering. © {new Date().getFullYear()} Faraz Mubeen Haider.</span>
         <a href="#home" className="back-top">BACK TO TOP ↑</a>
       </footer>
     </main>

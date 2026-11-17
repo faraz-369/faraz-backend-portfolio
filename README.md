@@ -1,6 +1,8 @@
-# Faraz Mubeen Haider — Intelligent Systems Engineer Portfolio
+# Faraz Mubeen Haider — AI Risk & Security Portfolio
 
-A Next.js portfolio positioning Faraz Mubeen Haider as an **Intelligent Systems Engineer**. The work centers on building backend, data, and applied-AI systems that turn operational needs into measurable value, with clear evidence and disciplined product thinking.
+A Next.js portfolio positioning Faraz Mubeen Haider as an **AI Risk & Security Specialist**. The professional focus is making AI systems secure, reliable, and resilient as their capabilities increase, with emphasis on risk assessment, AI failure modes, and dependable agent workflows.
+
+The identity is a career focus, not a claim that The Economist recommends a specific occupation. Portfolio evidence includes agent failure and recovery experiments, a RAG/agent failure-mode catalog, and backend access and data controls. These demonstrate relevant engineering foundations; they are not claims of formal security audits, penetration testing, or AI safety certification.
 
 ## What's included
 
@@ -63,10 +65,11 @@ Evidence assets are stored under `public/evidence/brokercopilot/`. Contact heade
 
 ## Portfolio positioning and content hierarchy
 
-- Primary identity: Intelligent Systems Engineer.
-- Primary proof: PortfolioPulse, AgentFault Lab, and applied-AI product work that turns technical systems into measurable value.
+- Primary identity: AI Risk & Security Specialist.
+- Positioning statement: “I work on making AI systems secure, reliable, and resilient as their capabilities increase.”
+- Primary proof: AgentFault Lab and the RAG Agent Failure Catalog explore agent reliability and repeatable failure analysis; PortfolioPulse demonstrates access, validation, and auditability controls.
 - Supporting proof: MUSTER / Broker Copilot early-stage product development, product discovery and workflow demonstration; NIC data workflows; and 1337 Ventures project-based backend contribution.
-- Applied AI and research projects are framed as evidence of technical leverage and iterative engineering rather than the sole identity.
+- Applied AI and research projects are framed as evidence of AI risk, reliability, and iterative engineering rather than claims of formal security credentials.
 - The MUSTER / Broker Copilot case study separates research artefacts, prospect interest, demonstrated workflow behaviour, and commercial outcomes. It does not claim paying customers, pilots, revenue, production deployment or product-market fit.
 
 ## Before publishing

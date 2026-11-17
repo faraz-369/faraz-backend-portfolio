@@ -12,7 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const story = allStories.find((item) => item.slug === slug);
-  return { title: story ? `${story.title} | Faraz Mubeen Haider` : "Story not found", description: story?.summary };
+  return { title: story ? `${story.title} | AI Risk & Security Specialist` : "Story not found", description: story?.summary };
 }
 
 export default async function StoryPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -52,6 +52,6 @@ export default async function StoryPage({ params }: { params: Promise<{ slug: st
         <div className="story-bottom"><Link className="button button-ghost" href="/#experience"><ArrowLeft size={15}/> All experience</Link><a className="button button-primary" href="mailto:faraz.outreach8@gmail.com">Discuss this work <ArrowUpRight size={15}/></a></div>
       </article>
     </div>
-    <footer className="footer"><Link className="brand" href="/#home"><span className="brand-mark">FM</span><span>FARAZ<span className="brand-dot">.</span></span></Link><span>Evidence-led engineering stories · © {new Date().getFullYear()}</span><Link href="/#home" className="back-top">HOME ↑</Link></footer>
+    <footer className="footer"><Link className="brand" href="/#home"><span className="brand-mark">FM</span><span>FARAZ<span className="brand-dot">.</span></span></Link><span>AI risk &amp; security · Evidence-led engineering stories · © {new Date().getFullYear()}</span><Link href="/#home" className="back-top">HOME ↑</Link></footer>
   </main>;
 }
